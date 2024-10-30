@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./fonts/Albegos.ttf" />
+    <script>
+      tailwind.config = {
+        content: [],
+        screens: {
+          "2xl": { max: "1535px" },
+          // => @media (max-width: 1535px) { ... }
+
+          xl: { max: "1279px" },
+          // => @media (max-width: 1279px) { ... }
+
+          lg: { max: "1023px" },
+          // => @media (max-width: 1023px) { ... }
+
+          md: { max: "767px" },
+          // => @media (max-width: 767px) { ... }
+
+          sm: { max: "639px" },
+          // => @media (max-width: 639px) { ... }
+        },
+        theme: {
+          extend: {
+            fontFamily: {
+              hind: ["Hind Vadodara", "sans-serif"],
+              play: ['"Playfair Display"', "serif"],
+              albegos: ['"Albegos"', "serif"],
+            },
+            fontWeight: {
+              light: 300,
+              normal: 400,
+              medium: 500,
+              semibold: 600,
+              bold: 700,
+            },
+          },
+        },
+        plugins: [],
+      };
+    </script>
+  </head>
+  <body>
+    <main
+      class="max-w-[390px] mx-auto bg-[url('./img/background.png')] h-[844px] bg-contain bg-no-repeat bg-center font-hind flex flex-col justify-between"
+    >
+      <div class="flex items-center justify-between p-4 text-white">
+        <div class="font-albegos text-[35px]">LAMANSH</div>
+        <button
+          class="relative w-8 h-8 flex flex-col items-center justify-center before:content-[''] before:w-8 before:h-0.5 before:bg-white before:absolute before:left-0 before:top-2 after:content-[''] after:w-8 after:h-0.5 after:bg-white after:absolute after:left-0 after:bottom-2"
+        >
+          <span class="gap-3 w-8 h-0.5 bg-white"></span>
+        </button>
+      </div>
+      <div class="bg-[rgba(240,240,240,0.6)] mx-[18px]">
+        <div
+          class="px-[10px] py-[43px] text-center font-play text-[35px] text-[#494949]"
+        >
+          Find the dress of your dreams and make your wedding a fairytale come
+          true
+        </div>
+      </div>
+      <div class="flex justify-center items-center">
+        <button
+          class="bg-[#f0f0f0] px-[17px] py-[11px] font-play text-[#494949] text-[19px] ring-[1px] ring-[#9B8C7C] relative bottom-[31px]"
+        >
+          Shop The Collection
+        </button>
+      </div>
+    </main>
+    <section class="max-w-[390px] mx-auto mt-[63px]">
+      <div>
+        <p class="font-play text-5 text-center">The Most Trending Now</p>
+        <p class="mt-[13px] text-center text-[14px] font-hind px-5 mb-16">
+          "Unleash Your Inner Glamour with the Latest Wedding Dress Trends"
+        </p>
+      </div>
+      <div class="flex flex-col px-[58px] mb-[63px]">
+        <div>
+          <img src="./img/item1.png" alt="" />
+          <h3 class="mt-[10px] font-play text-4 font-medium">
+            Wedding Dress "Monica"
+          </h3>
+          <p class="text-[#767575] font-hind text-4 mt-[7px]">1500 $ USD</p>
+        </div>
+      </div>
+      <div class="flex flex-col px-[58px] mt-[58px] mb-[63px]">
+        <div>
+          <img src="./img/item2.png" alt="" />
+          <h3 class="mt-[10px] font-play text-4 font-medium">
+            Wedding Dress "Veronica"
+          </h3>
+          <p class="text-[#767575] font-hind text-4 mt-[7px]">1200 $ USD</p>
+        </div>
+      </div>
+      <div class="flex flex-col px-[58px] mt-[58px] mb-[63px]">
+        <div>
+          <img src="./img/item3.png" alt="" />
+          <h3 class="mt-[10px] font-play text-4 font-medium">
+            Wedding Dress "Ella"
+          </h3>
+          <p class="text-[#767575] font-hind text-4 mt-[7px]">1800 $ USD</p>
+        </div>
+      </div>
+      <div class="flex flex-col px-[58px] mt-[58px] mb-[63px]">
+        <div>
+          <img src="./img/item4.png" alt="" />
+          <h3 class="mt-[10px] font-play text-4 font-medium">
+            Wedding Dress "Gala"
+          </h3>
+          <p class="text-[#767575] font-hind text-4 mt-[7px]">2200 $ USD</p>
+        </div>
+      </div>
+    </section>
+    <section class="max-w-[390px] mx-auto">
+      <div>
+        <p class="font-play text-5 text-center">Search By Designer</p>
+        <p class="mt-[13px] text-center text-[14px] font-hind px-[47px] mb-16">
+          "Unleash Your Inner Glamour with the Latest Wedding Dress Trends"
+        </p>
+      </div>
+
+      <div class="divide-y-2 divide-[#9B8C7C] divide-solid px-[14px]">
+        <p class="text-[#9B8C7C] text-5 font-play text-center">Vera Wong</p>
+        <ul
+          class="text-center flex flex-col gap-[38px] font-play text-5 pt-[29px]"
+        >
+          <li>Carolina Herrera</li>
+          <li>Monique Lhuillier</li>
+          <li>Oscar de la Renta</li>
+          <li>Marchesa</li>
+          <li>Reem Acra</li>
+          <li>Berta Bridal</li>
+          <li>Galia Lahav</li>
+        </ul>
+      </div>
+      <a
+        href="#"
+        class="px-[106px] flex items-center justify-between mt-[42px] font-hind text-4"
+      >
+        Other Designers
+        <img src="./img/right-arrow.svg" alt="" />
+      </a>
+    </section>
+    <section class="max-w-[390px] mx-auto mt-16 px-[14px] flex flex-col gap-5">
+      <img src="./img/design1.png" alt="" />
+      <img src="./img/design2.png" alt="" />
+      <img src="./img/design3.png" alt="" />
+    </section>
+    <section class="max-w-[390px] mx-auto mt-16 px-[14px]">
+      <div>
+        <p class="font-play text-5 text-center">New Collection 2023</p>
+        <p class="mt-[13px] text-center text-[14px] font-hind px-5 mb-16">
+          "Discover Your Perfect Match: The Latest Trends in Wedding Dresses"
+        </p>
+        <img src="./img/collection1.png" alt="" />
+        <div class="flex items-center justify-center">
+          <button
+            class="font-play text-17 font-medium text-white px-[22px] py-[11px] bg-[#9B8C7C] mt-[34px]"
+          >
+            Open Catalog
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="max-w-[390px] mx-auto mt-16 px-[17px]">
+      <div>
+        <p class="font-play text-[30px]">
+          Complete Your Bridal Look: Essential Wedding Accessories
+        </p>
+        <p class="mt-[13px] text-[18px] font-hind">
+          Comfortable shoes, varies hats, handbag and jewelry you can also
+          purchase from us.
+        </p>
+        <button
+          class="font-play text-17 font-medium text-white px-[47px] py-[10px] bg-[#9B8C7C] mt-[34px]"
+        >
+          View All
+        </button>
+      </div>
+      <div class="flex flex-col gap-10 mt-16 items-center">
+        <div>
+          <img src="./img/slider1.png" alt="" />
+          <h3 class="mt-[10px] font-play text-4 font-medium">
+            Shoes with small heels
+          </h3>
+          <p class="text-[#767575] font-hind text-4 mt-[7px]">250 $ USD</p>
+        </div>
+        <div>
+          <img src="./img/slider2.png" alt="" />
+          <h3 class="mt-[10px] font-play text-4 font-medium">
+            Headband for the bride
+          </h3>
+          <p class="text-[#767575] font-hind text-4 mt-[7px]">300 $ USD</p>
+        </div>
+        <div>
+          <img src="./img/slider3.png" alt="" />
+          <h3 class="mt-[10px] font-play text-4 font-medium">
+            Necklace for the brıde
+          </h3>
+          <p class="text-[#767575] font-hind text-4 mt-[7px]">400 $ USD</p>
+        </div>
+      </div>
+    </section>
+    <section class="max-w-[390px] mx-auto mt-16 px-[17px]">
+      <p class="font-play text-[30px] text-center">
+        Sign up for a dress fitting and get a
+        <span class="text-[#9B8C7C]">10% discount</span>
+      </p>
+      <form action="">
+        <input
+          type="text"
+          class="focus:outline-none placeholder:text-[#B7B7B7] placeholder:font-hind border-b-[1px] border-solid border-b-[#B7B7B7] w-full mt-[55px]"
+          placeholder="Name"
+        />
+        <input
+          type="text"
+          class="focus:outline-none placeholder:text-[#B7B7B7] placeholder:font-hind border-b-[1px] border-solid border-b-[#B7B7B7] w-full mt-6"
+          placeholder="Phone Number"
+        />
+        <div class="flex items-center justify-between mt-[52px]">
+          <button
+            class="border-[1px] border-solid border-[#b7b7b7] px-7 py-2 flex items-center justify-around gap-2"
+          >
+            20.04.2023
+            <img src="./img/calendar 1.svg" alt="" />
+          </button>
+          <button
+            class="border-[1px] border-solid border-[#b7b7b7] px-7 py-2 flex items-center justify-around gap-2"
+          >
+            10.00 - 11.00
+            <img src="./img/down-arrow 1.svg" alt="" />
+          </button>
+        </div>
+        <div class="flex flex-col items-center justify-center mt-[54px]">
+          <button
+            type="submit"
+            class="font-play bg-[#9B8C7C] px-[113px] py-[10px] text-white mx-auto relative left-0 right-0"
+          >
+            Send
+          </button>
+        </div>
+      </form>
+      <img src="./img/sign-up.png" class="mt-10" alt="" />
+    </section>
+    <section class="max-w-[390px] mx-auto mt-16">
+      <p class="font-play text-5 text-center">Follow us in Instagram</p>
+      <a
+        class="mt-[11px] text-center text-4 font-hind px-5 block text-[#5C5C5C] mb-16"
+      >
+        @lamanshStore #Lamansh
+      </a>
+      <img src="./img/instagram1.png" alt="" />
+      <img src="./img/instagram2.png" alt="" />
+      <img src="./img/instagram3.png" alt="" />
+      <img src="./img/instagram4.png" alt="" />
+      <img src="./img/instagram5.png" alt="" />
+    </section>
+    <footer
+      class="max-w-[390px] mx-auto mt-[104px] pl-11 pt-9 pb-11 pr-[50px] bg-[#F0F0F0] font-hind text-[15px]"
+    >
+      <div>
+        <h1 class="font-albegos text-[30px]">LAMANSH</h1>
+        <p class="mt-6">Lamansh ©Copyright 2023. All rights reserved.</p>
+        <a class="underline decoration-[#9B8C7C] inline-block mt-4 mb-20">
+          Privacy Policy
+        </a>
+      </div>
+      <div class="mt-15">
+        <a href="tel:+123456789" class="text-5">+123 456 789</a>
+        <p class="mt-5">lamanshTeam@gmail.com</p>
+        <div class="flex items-center justify-start gap-[11px] mt-[18px]">
+          <a href="#">
+            <img src="./img/instagram.png" alt="" />
+          </a>
+          <a href="">
+            <img src="./img/facebook.png" alt="" />
+          </a>
+          <a href="">
+            <img src="./img/twitter.png" alt="" />
+          </a>
+        </div>
+      </div>
+      <p class="text-[17px] mt-11">Stay up to date with our news</p>
+      <div class="flex items-center justify-between mt-[30px]">
+        <input
+          type="email"
+          class="focus:outline-none placeholder:text-[#B7B7B7] bg-[#F0F0F0] placeholder:font-hind border-b-[1px] border-solid border-b-[#B7B7B7] w-full"
+          placeholder="Enter your email"
+        />
+        <button>
+          <img src="./img/right-arrow.svg" />
+        </button>
+      </div>
+    </footer>
+  </body>
+</html>
